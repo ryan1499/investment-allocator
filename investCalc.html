@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Allocator</title>
+</head>
+<body>
+    <div id="form">
+        <h1>Investment Calculator</h1>
+        <form>
+            <label for="total">How much would you like to invest? </label>
+            <input type="number" id="total" name="total" min="0"><br><br>
+            <label for="assetSelection">What percentage would you like to allocate to the assets below? </label><br>
+            <ul>
+                <li>
+                  <label for="stocks">Stocks</label>
+                  <input class="percentInput" type="number" id="stocks" name="stocks" min="0" max="100"><br><br>
+                </li>
+                <li>
+                    <label for="tBonds">Treasury Bonds</label>
+                    <input class="percentInput" type="number" id="tBonds" name="treasury bonds" min="0" max="100"><br><br>
+                </li>
+                <li>
+                    <label for="cBonds">Corporate Bonds</label>
+                    <input class="percentInput" type="number" id="cBonds" name="corporate bonds" min="0" max="100"><br><br>
+                </li>
+                <li>
+                    <label for="gold">Gold</label>
+                    <input class="percentInput" type="number" id="gold" name="gold" min="0" max="100"><br><br>
+                </li>
+                <li>
+                    <label for="crypto">Cryptocurrency</label>
+                    <input class="percentInput" type="number" id="crypto" name="cryptocurrency" min="0" max="100"><br><br>
+                </li>
+            </ul>
+        </form>
+        <h3 id="count">Total allocation: </h3>
+        <button type="button" id="allocateBtn" onclick="allocate()">Allocate!</button>
+    </div>
+
+    <div>
+
+        <ol id="results">
+
+
+        </ol>
+
+    </div>
+        <script src="investCalc.js"> </script>
+</body>
+</html>
